@@ -1,25 +1,26 @@
-// import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import './App.css';
-
+import Navbar from './Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 function App() {
-  return (
+  return ( 
+    <Router>
     <div className="App">
+       <Navbar />
+       <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          {/* <Route path="/work" element={<Work />} />
+          <Route path="/play" element={<Play />} /> */}
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
       <header className="App-header">
-        <p>
-       Hi, I'm Alyssa
-        </p>
-
-        <p>Developer, designer, musician and artist.</p>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          I'm a former music teacher
-        </a> */}
       </header>
     </div>
+    </Router>
   );
 }
 
