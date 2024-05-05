@@ -1,7 +1,10 @@
 export default function About() {
     return (
         <div>
-            <h1>About</h1>
+                     <h1 className="about-header">About</h1>
+        <div className="about-container" style={{ width: '50%', float: 'left' }}>
+              <div className="about-content" style={{ padding: '20px' }}>
+
             {/* History */}
             <p>In 2018 I earned a BA in Music Composition from Holy Names University where I was on a 
                 golf scholarship. With my degree, I becaue a music teacher but realized that it wasn't the career for me.
@@ -16,6 +19,10 @@ export default function About() {
     at the University of Arizona and I feel so blessed to have found a job I love. I want to continue to improve my skills and 
     learn all that I can about User Experience and have goals of getting my Masters in User Experience from Arizona State University.</p>
      
+        </div>
+        </div>
+        <img src="../images/aboutme_img.jpg" alt="Sitting in Snow" />
+
         </div>
     );
 }
