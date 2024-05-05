@@ -6,7 +6,7 @@ export default function About() {
               <div className="about-content" style={{ padding: '20px' }}>
 
             {/* History */}
-            <p>In 2018 I earned a BA in Music Composition from Holy Names University where I was on a 
+            <p>In 2018, I earned a BA in Music Composition from Holy Names University where I was on a 
                 golf scholarship. With my degree, I becaue a music teacher but realized that it wasn't the career for me.
                Awhile still continuing to teach music on the side, I went back to school and earned a BS in Computer Science 
                from the University of Arizona in 2023. Going back to school felt like a dream but
@@ -21,8 +21,9 @@ export default function About() {
      
         </div>
         </div>
-        <img src="../images/aboutme_img.jpg" alt="Sitting in Snow" />
-
+        <div className="about-container" style={{ width: '50%', float: 'right'}}>
+        <img src="../aboutme_img.jpg" alt="Sitting in Snow" style={{ width: '400px'}}/>
+        </div>
         </div>
     );
 }
