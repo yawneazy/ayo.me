@@ -32,6 +32,29 @@ p {
   color: #61dafb;
 }
 
+.dropdown-wrapper:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.dropdown li {
+  padding: 5px 0;
+}
+
+.dropdown li:hover {
+  background-color: #ddd;
+}
+
+
 /* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
